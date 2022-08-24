@@ -40,7 +40,7 @@
               </label>
             </td>
             <td>{{ task.content }}</td>
-            <td @click="removeTask(task)">
+            <td @click="removeTask(index)">
               <i class="bx bx-trash"></i>
             </td>
           </tr>
