@@ -87,7 +87,7 @@ const tasks = ref(tasksData);
 function addTask() {
   let saveTask = 0;
   tasks.value.forEach((task) => {
-    if (task.content === newTask.value) {
+    if (task.content.toLowerCase() === newTask.value.toLowerCase()) {
       saveTask = 1;
     }
   });
